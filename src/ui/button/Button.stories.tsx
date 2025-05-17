@@ -12,7 +12,11 @@ type Story = StoryObj<typeof Button>;
 export const ButtonStory: Story = {
 	render: () => {
 		return (
-			<div style={{ display: 'flex', gap: '10px' }}>
+			<div
+				style={{
+					display: 'flex',
+					gap: '10px',
+				}}>
 				<Button
 					title='Применить'
 					htmlType='submit'

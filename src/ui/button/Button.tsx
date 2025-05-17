@@ -18,8 +18,12 @@ export const Button = ({
 		<button
 			className={clsx(
 				styles.button,
-				{ [styles.button_apply]: type === 'apply' },
-				{ [styles.button_clear]: type === 'clear' }
+				{
+					[styles.button_apply]: type === 'apply',
+				},
+				{
+					[styles.button_clear]: type === 'clear',
+				}
 			)}
 			type={htmlType}
 			onClick={onClick}>
